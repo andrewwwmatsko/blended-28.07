@@ -7,6 +7,7 @@ const todoSlice = createSlice({
     items: [],
     currentTodo: null,
   },
+
   reducers: {
     addTodo: (state, { payload }) => {
       state.items.push(payload);
@@ -26,6 +27,7 @@ const todoSlice = createSlice({
       state.currentTodo = null;
     },
   },
+
   selectors: {
     selectTodos: state => state.items,
     selectCurrentTodo: state => state.currentTodo,
